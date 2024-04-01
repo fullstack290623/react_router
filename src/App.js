@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
+import Post from './components/Post'
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/contact/:id' element={<Contact />} />
           <Route exact path='/about' element={<About />} />
+          <Route exact path='/posts/:id' element={<Post />} />
         </Routes>
       </div>
     );
